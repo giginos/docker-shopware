@@ -1,5 +1,5 @@
 FROM php:7.0-apache
-MAINTAINER Jeffrey Boehm <jeffrey.boehm@twt.de>
+MAINTAINER Rafael Kutscha <giginos@web.de>
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -22,7 +22,7 @@ RUN apt-get update && \
     a2enmod rewrite
     
 ENV \
-    SHOPWARE_VERSION=5.1.6 \
+    SHOPWARE_VERSION=5.2.3 \
     COMPOSER_VERSION=1.1.2 \
     MYSQL_HOST=db \
     MYSQL_USER=root \
