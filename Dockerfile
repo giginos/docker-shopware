@@ -29,7 +29,7 @@ ENV \
     MYSQL_PASSWORD=root \
     MYSQL_DATABASE=shopware
 
-ONBUILD RUN wget -qO /root/shopware.tar.gz https://github.com/giginos/shopware/archive/v$SHOPWARE_VERSION.tar.gz && \
+RUN wget -qO /root/shopware.tar.gz https://github.com/giginos/shopware/archive/v$SHOPWARE_VERSION.tar.gz && \
     wget -qO /usr/local/bin/composer https://getcomposer.org/download/$COMPOSER_VERSION/composer.phar && \
     chmod 755 /usr/local/bin/composer
 
